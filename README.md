@@ -11,6 +11,8 @@
 
 Modern agents can fail in ways that traditional monitoring can't catch. In this hands-on lab, learn more about how Microsoft Foundry Observability helps you move from prototype to production - with context-specific evaluation suites (auto-generated evaluators + test datasets) wired into developer workflows via skills and MCP tooling for hosted agents. Scale quality with continuous evaluations, trace-linked analysis and adaptive red teaming - and walk away with a sandbox you can use to explore additional features at your own pace.
 
+---
+
 ### Business Scenario
 
 Zava Travel is a fictitious premium travel agency specializing in international travel experiences. The team has built the Zava Travel Concierge — an AI-powered multi-agent system that orchestrates specialist agents for flights, hotels, and car rentals to plan complete itineraries. The Concierge does *not* answer questions from its own knowledge — it delegates to these specialist sub-agents, each of which owns one CSV data source and exposes typed Python tools to query it. This is a new agent (with no pre-existing test datasets) and the team needs to ensure that agent responses are reliable, safe and high-quality even as demand scales and requirements change.
@@ -32,6 +34,7 @@ flowchart LR
     Cars -- results --> Concierge
     Concierge -- itinerary --> User
 ```
+---
 
 ### Learning Objectives
 
@@ -55,6 +58,7 @@ By completing this lab you will learn to:
 > the loop and how to interpret what you see — not on matching anyone
 > else's numbers.
 
+---
 
 ### 🏫 Getting started
 
@@ -67,13 +71,12 @@ To complete this lab you must have:
 _An Azure subscription and GitHub Copilot subscription are provided to
 in-venue attendees. Self-guided learners should bring their own._
 
-There are **two paths** through this lab — pick the one that matches how
-you're taking it:
+There are **two paths** available — pick the one that matches your current context:
 
 | Path | For | Start Here |
 |------|-----|------------|
-| 🏫 **Skillable** (in-venue) | Build attendees — Azure RG and Foundry agent are pre-provisioned for you | [`workshop/docs/00-setup/skillable/`](./workshop/docs/00-setup/skillable/README.md) |
-| 🏠 **Self-Guided** (at-home) | You'll provision everything yourself with `azd up` | [`workshop/docs/00-setup/self-guided/`](./workshop/docs/00-setup/self-guided/README.md) |
+| 🏫 **In-Venue** | Build attendees — Azure and Foundry resources are pre-provisioned by Skillable | [`workshop/docs/00-setup/skillable/`](./workshop/docs/00-setup/skillable/README.md) |
+| 🏠 **Self-Guided** | At Home - You'll provision everything yourself with `azd up` using your own subscription | [`workshop/docs/00-setup/self-guided/`](./workshop/docs/00-setup/self-guided/README.md) |
 
 Both paths converge at the [shared setup steps](./workshop/docs/00-setup/shared/README.md)
 once you have a Codespace open and an Azure resource group available.

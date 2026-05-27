@@ -1,15 +1,15 @@
 # Self-Guided Path (At-Home)
 
 You're working through this workshop on your own — you'll **provision
-everything from scratch** using `azd up`.
+everything from scratch** using `azd up` using your own GitHub subscription. You will also need a GitHub Copilot account. _A Pro account is recommended to get the best experience using the Foundry skills that are the focus here_.
 
 ## What You'll Do
 
 | Step | Action |
 |------|--------|
-| [1](./1-prereqs.md) | Install local tools (or open a Codespace) and clone the repo |
-| [2](./2-azure-login.md) | Sign in to Azure CLI + Azure Developer CLI |
-| [3](./3-azd-up.md) | Run `azd up` inside `zava/` to provision the Foundry project and deploy the agent |
+| [1](./1-prereqs.md) | Clone the repo and launch Codespaces (dev env setup) |
+| [2](./2-azure-login.md) | Sign in to Azure CLI + Azure Developer CLI (Azure auth) |
+| [3](./3-azd-up.md) | Provision the Foundry project with `azd` (infra setup) |
 
 Then continue with the [shared](../shared/README.md) convergence flow:
 

@@ -1,10 +1,11 @@
-# Self-Guided Step 1 — Install Prerequisites & Open Workspace
+# Step 1 — Set up Dev Environment
 
 You have two options:
 
-- **Option A (recommended)**: Use a GitHub Codespace — all tools
-  pre-installed.
-- **Option B**: Install everything locally.
+- **Option A (recommended)**: Use a GitHub Codespace (in browser)
+- **Option B**: Install everything manually (in device)
+
+**We recommend the first approach**.
 
 ## Option A — Open in Codespaces
 

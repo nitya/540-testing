@@ -1,4 +1,4 @@
-# Self-Guided Step 2 — Sign in to Azure
+# Step 2 — Sign in to Azure
 
 You need to be signed in to **both** Azure CLI (`az`) and Azure Developer
 CLI (`azd`) — they maintain separate auth contexts.
@@ -47,6 +47,12 @@ azd version
 
 You should see `1.25.x` or later. If `azd` is older, update before
 continuing.
+
+```bash
+azd extension list
+```
+
+You shoulkd see `azure.ai.agents` up to date version installed.
 
 ## ✅ Checkpoint
 

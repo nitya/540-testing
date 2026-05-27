@@ -1,4 +1,4 @@
-# Self-Guided Step 3 — Provision with `azd up`
+# Step 3 — Provision infrasructure
 
 `azd up` reads the Bicep templates in `zava/infra/` and the agent manifest
 in `zava/src/zava-travel-concierge/agent.manifest.yaml`. In one command it:
@@ -28,14 +28,12 @@ From the repo root:
 
 ```bash
 cd zava
-azd env new lab540   # name can be anything; "lab540" is fine
+azd env new build26-lab540   # name can be anything; "lab540" is fine
 ```
 
-You'll be asked for:
-
-- Azure subscription → pick yours
-- Region → press Enter to accept `eastus2`, or type one of the three
-  supported regions above
+```bash
+New environment 'build26-lab540' was set as default
+```
 
 ## 3.3 — Provision + deploy
 
@@ -44,6 +42,12 @@ Still inside `zava/`:
 ```bash
 azd up
 ```
+
+You'll be asked for:
+
+- Azure subscription → pick yours
+- Region → press Enter to accept `eastus2`, or type one of the three
+  supported regions above
 
 This takes ~5–8 minutes. You'll see Bicep provisioning, then a Docker
 build + push, then the agent registration.
